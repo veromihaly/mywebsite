@@ -1,15 +1,59 @@
+<!DOCTYPE html>
 <html>
-    <h1>
-        Hey, I'm Mihaly Vero
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a student of the University of Debrecen.
-        </p>
-        <h2>What I am working on</h2>
-        <p>
-            I am currently working on a 3D video game made in Unity.
-        </p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Mihály Verő - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hey, I'm Mihály Verő</h1>
+    
+    <div class="tabs">
+        <input type="radio" id="tab1" name ="tab" checked>
+        <label for="tab1">About me</label>
+
+        <input type="radio" id="tab2" name ="tab">
+        <label for="tab2">Projects</label>
+
+        <input type="radio" id="tab3" name ="tab">
+        <label for="tab3">Contact Me</label>
+        
+        <div class="tab-content" id="content1">
+            <h2>About me</h2>
+            <p>
+                I'm a student at the University of Debrecen, Faculty of Informatics. With a passion for technology and problem-solving, I’ve worked hard to build a solid foundation in programming and software development.
+                I hold certifications in Python (IT Specialist) and Unity (Certified User: Programmer), and I have strong skills in C# and other programming languages.
+                I thrive in both team settings and independent work, and I’m always eager to learn and take on new challenges.
+                While I’m still early in my professional journey, I’m confident that my dedication and quick learning ability will allow me to make an impact in the tech industry.
+                In my free time, I enjoy staying active, watching English-language films and series, and diving into video games. Feel free to explore my projects on <a href="https://github.com/veromihaly">GitHub</a> to see more of what I’m working on!
+            </p>
+        </div>
+
+        <div class="tab-content" id="content2">
+            <h2>Projects</h2>
+            <h3>1. 3D Survival game made in Unity</h3>
+                <p>Description:</p>
+                <p>
+                    A game I developed using Unity, which features an RPG survival game, where the player has the option to follow the main story or wonder around in the wild, gather resources, hunt animals and so on.
+                    The project helped me apply my knowledge in game development, focusing on how to create a basic AI, which I used for the movement of different animals
+                    or how to make animations in Unity.
+                </p>
+                <p>Technologies Used: Unity, C#, Visual Studio Code, Blender.</p>
+            <h3>2. Portfolio website</h3>
+                <p>Description</p>
+                <p>
+                    This website is a personal project built to showcase my skills, experience, and portfolio.
+                    I used this project to practice web development and design while focusing on creating an intuitive and responsive user experience.
+                </p>
+                <p>Technologies used: HTML, CSS</p>
+        </div>
+
+        <div class="tab-content" id="content3">
+            <h2>Contact Me</h2>
+            <p>Email:<a href="mailto:veromihaly18@gmail.com">veromihaly18@gmail.com</a></p>
+            <p>LinkedIn:<a href="https://www.linkedin.com/in/mihály-verő-930054320">www.linkedin.com/in/mihály-verő-930054320</a></p>
+        </div>
+
+    </div>
+</body>
 </html>

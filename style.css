@@ -1,0 +1,82 @@
+body
+{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #121212;
+    color: #DC143C;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3
+{
+    color: #DC143C;
+}
+
+p
+{
+    color: #FFF;
+}
+
+a
+{
+    color: #DC143C;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #FF6347;
+    text-decoration: underline;
+}
+
+a:visited
+{
+    color: #A52A2A
+}
+
+.tabs 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="radio"]
+{
+    display: none;
+}
+
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #1A1A1A;
+    color: #DC143C;
+    border: 1px solid #DC143C;
+    margin-bottom: -1px;
+    transition: 0.3s;
+}
+
+label:hover {
+    background-color: #333;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #DC143C;
+    color: #FFF;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #DC143C;
+    background-color: #1A1A1A;
+    color: #EEE;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3
+{
+    display: block;
+}
