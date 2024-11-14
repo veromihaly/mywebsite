@@ -38,7 +38,8 @@ a:visited
 .tabs 
 {
     display: flex;
-    flex-direction: column;
+    border-bottom: 1px solid #DC143C;
+    margin-bottom: 20px;
 }
 
 input[type="radio"]
@@ -47,14 +48,16 @@ input[type="radio"]
 }
 
 label {
-    display: inline-block;
+    flex: 1; 
+    text-align: center; 
     padding: 10px 20px;
     cursor: pointer;
     background-color: #1A1A1A;
     color: #DC143C;
     border: 1px solid #DC143C;
-    margin-bottom: -1px;
+    border-bottom: none; 
     transition: 0.3s;
+    margin-right: -1px; 
 }
 
 label:hover {
@@ -76,7 +79,6 @@ input[type="radio"]:checked + label {
 
 #tab1:checked ~ #content1,
 #tab2:checked ~ #content2,
-#tab3:checked ~ #content3
-{
-    display: block;
+#tab3:checked ~ #content3 {
+    display: block; 
 }

@@ -17,43 +17,107 @@
 
         <input type="radio" id="tab3" name ="tab">
         <label for="tab3">Contact Me</label>
-        
-        <div class="tab-content" id="content1">
-            <h2>About me</h2>
-            <p>
-                I'm a student at the University of Debrecen, Faculty of Informatics. With a passion for technology and problem-solving, I’ve worked hard to build a solid foundation in programming and software development.
-                I hold certifications in Python (IT Specialist) and Unity (Certified User: Programmer), and I have strong skills in C# and other programming languages.
-                I thrive in both team settings and independent work, and I’m always eager to learn and take on new challenges.
-                While I’m still early in my professional journey, I’m confident that my dedication and quick learning ability will allow me to make an impact in the tech industry.
-                In my free time, I enjoy staying active, watching English-language films and series, and diving into video games. Feel free to explore my projects on <a href="https://github.com/veromihaly">GitHub</a> to see more of what I’m working on!
-            </p>
-        </div>
-
-        <div class="tab-content" id="content2">
-            <h2>Projects</h2>
-            <h3>1. 3D Survival game made in Unity</h3>
-                <p>Description:</p>
-                <p>
-                    A game I developed using Unity, which features an RPG survival game, where the player has the option to follow the main story or wonder around in the wild, gather resources, hunt animals and so on.
-                    The project helped me apply my knowledge in game development, focusing on how to create a basic AI, which I used for the movement of different animals
-                    or how to make animations in Unity.
-                </p>
-                <p>Technologies Used: Unity, C#, Visual Studio Code, Blender.</p>
-            <h3>2. Portfolio website</h3>
-                <p>Description</p>
-                <p>
-                    This website is a personal project built to showcase my skills, experience, and portfolio.
-                    I used this project to practice web development and design while focusing on creating an intuitive and responsive user experience.
-                </p>
-                <p>Technologies used: HTML, CSS</p>
-        </div>
-
-        <div class="tab-content" id="content3">
-            <h2>Contact Me</h2>
-            <p>Email:<a href="mailto:veromihaly18@gmail.com">veromihaly18@gmail.com</a></p>
-            <p>LinkedIn:<a href="https://www.linkedin.com/in/mihály-verő-930054320">www.linkedin.com/in/mihály-verő-930054320</a></p>
-        </div>
-
     </div>
+    
+    <div class="tab-content" id="content1">
+        <h2>About me</h2>
+        <p>
+            I'm a student at the University of Debrecen, Faculty of Informatics. With a passion for technology and problem-solving, I’ve worked hard to build a solid foundation in programming and software development.
+            I hold certifications in Python (IT Specialist) and Unity (Certified User: Programmer), and I have strong skills in C# and other programming languages.
+            I thrive in both team settings and independent work, and I’m always eager to learn and take on new challenges.
+            While I’m still early in my professional journey, I’m confident that my dedication and quick learning ability will allow me to make an impact in the tech industry.
+            In my free time, I enjoy staying active, watching English-language films and series, and diving into video games. Feel free to explore my projects on <a href="https://github.com/veromihaly">GitHub</a> to see more of what I’m working on!
+        </p>
+    </div>
+
+    <div class="tab-content" id="content2">
+        <h2>Projects</h2>
+        <h3>1. 3D Survival game made in Unity</h3>
+            <p>Description:</p>
+            <p>
+                A 3D survival RPG game I developed for my thesis project. The game allows players to either follow the main story or explore an open world where they can gather resources,
+                hunt animals, and survive. The project served as an opportunity to explore various aspects of Unity development, including script integration, animations, sound design,
+                and scene management.
+            </p>
+            <p>Technologies Used: Unity, C#, Visual Studio Code, Blender.</p>
+            <p>Challanges&Solutions:</p>
+            <p>
+                <p>
+                    -Integrating all of the game's elements, such as AI, animations, and sounds, while keeping the code organized.
+                    I leveraged Unity's prefab system to streamline the process.
+                </p>
+                <p>
+                    -Sourcing the right prefabs and models from the Unity Store was a challenge.
+                    I spent time experimenting with different assets to find ones that best fit the game's style and mechanics.
+                </p>
+                    -Implementing realistic animal movement required fine-tuning the AI. I used AI techniques to ensure smooth movement for animals in the environment.
+                <p>
+                    -I had to sync sounds with animal and player movements.
+                    I created sound triggers in the game that would play specific sounds when the player or animals performed certain actions.
+                </p>
+                    -Designing a system to allow the player to pick up items from the environment involved writing scripts to detect interactions and manage the inventory.
+                <p>
+                    -Time Simulation: I implemented a day-night cycle by using Unity's time system to change the skybox and lighting, simulating the passing of days.
+                </p>
+                    -A key feature was making the player character's movement feel responsive, which involved working on character control scripts and implementing jumping mechanics.
+                <p>
+                    -Implementing a save system for player progress was challenging.
+                    To allow players to save and load their progress, I used JSON files to serialize and deserialize data.
+                    This method let me store information such as inventory items, player stats, and game progress, ensuring that players could resume from where they left off.
+                </p>
+            </p>
+        <h3>2. Portfolio website</h3>
+            <p>Description:</p>
+            <p>
+                This personal website showcases my skills, experience, and portfolio.
+                It was an opportunity for me to apply web development skills, focusing on building an intuitive user interface and responsive design that works well across various devices.
+            </p>
+            <p>Technologies used: HTML, CSS</p>
+            <p>Challanges&Solutions:</p>
+            <p>
+            Ensuring the site was mobile-friendly was a key challenge.
+            I implemented a responsive layoutusing CSS Flexbox to ensure the website adapts well to different screen sizes, providing an optimal user experience on both desktop and mobile devices.
+            </p>
+    </div>
+
+    <div class="tab-content" id="content3">
+        <h2>Contact Me</h2>
+        <p>Email:<a href="mailto:veromihaly18@gmail.com">veromihaly18@gmail.com</a></p>
+        <p>LinkedIn:<a href="https://www.linkedin.com/in/mihály-verő-930054320">www.linkedin.com/in/mihály-verő-930054320</a></p>
+    </div>
+
+    <script>
+        const radios = document.querySelectorAll('input[type="radio"]');
+        const contents = document.querySelectorAll('.tab-content');
+        const labels = document.querySelectorAll('label');
+
+        contents.forEach(content => {
+            content.style.display = 'none';
+        });
+
+        function showContent() {
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+
+            const selectedTabId = document.querySelector('input[type="radio"]:checked').id;
+            const contentId = selectedTabId.replace('tab', 'content');
+            document.getElementById(contentId).style.display = 'block';
+
+            labels.forEach(label => {
+                label.style.backgroundColor = '#1A1A1A'; 
+                label.style.color = '#DC143C'; 
+            });
+
+            document.querySelector(`label[for="${selectedTabId}"]`).style.backgroundColor = '#DC143C';
+            document.querySelector(`label[for="${selectedTabId}"]`).style.color = '#FFF';
+        }
+
+        window.onload = showContent;
+
+        radios.forEach(radio => {
+            radio.addEventListener('change', showContent);
+        });
+    </script>
 </body>
 </html>
