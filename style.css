@@ -60,6 +60,20 @@ label {
     margin-right: -1px; 
 }
 
+@media(max-width: 768px)
+{
+    label
+    {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .tabs
+    {
+        flex-direction: column;
+    }
+}
+
 label:hover {
     background-color: #333;
 }
