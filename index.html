@@ -4,54 +4,53 @@
     <meta charset="UTF-8">
     <title>Mihály Verő - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <div id="particles-js"></div>
 <body>
     <h1>Hey, I'm Mihály Verő</h1>
-    
-    <div class="tabs">
-        <input type="radio" id="tab1" name ="tab" checked>
-        <label for="tab1">About me</label>
+    <div class="tabs-container">
+        <div class="tabs">
+            <input type="radio" id="tab1" name ="tab" checked>
+            <label for="tab1">About me</label>
 
-        <input type="radio" id="tab2" name ="tab">
-        <label for="tab2">Projects</label>
+            <input type="radio" id="tab2" name ="tab">
+            <label for="tab2">Projects</label>
 
-        <input type="radio" id="tab3" name ="tab">
-        <label for="tab3">Contact Me</label>
-    </div>
-    
-    <div class="tab-content" id="content1">
-        <h2>About me</h2>
-        <p>
-            I'm a student at the University of Debrecen, Faculty of Informatics. With a passion for technology and problem-solving, I’ve worked hard to build a solid foundation in programming and software development.
-            I hold certifications in Python (IT Specialist) and Unity (Certified User: Programmer), and I have strong skills in C# and other programming languages.
-            I thrive in both team settings and independent work, and I’m always eager to learn and take on new challenges.
-            While I’m still early in my professional journey, I’m confident that my dedication and quick learning ability will allow me to make an impact in the tech industry.
-            In my free time, I enjoy staying active, watching English-language films and series, and diving into video games. Feel free to explore my projects on <a href="https://github.com/veromihaly" target="_blank">GitHub</a> to see more of what I’m working on!
-        </p>
-        <h2>Personal Information</h2>
-        <p>Name: Verő Mihály</p>
-        <p>Age: 23</p>
-        <p>Location: Hungary</p>
-        <button class="download-resume">
-            <a href="CV.pdf" download="Mihaly_Vero_Resume.pdf" target="_blank">Download My Resume</a>
-        </button>
-    </div>
-
-    <div class="tab-content" id="content2">
-        <h2>Projects</h2>
-        <h3>1. 3D Survival game made in Unity</h3>
-            <p>Description:</p>
+            <input type="radio" id="tab3" name ="tab">
+            <label for="tab3">Contact Me</label>
+        </div>
+        
+        <div class="tab-content" id="content1">
+            <h2>About me</h2>
             <p>
-                A 3D survival RPG game I developed for my thesis project. The game allows players to either follow the main story or explore an open world where they can gather resources,
-                hunt animals, and survive. The project served as an opportunity to explore various aspects of Unity development, including script integration, animations, sound design,
-                and scene management.
+                I'm a student at the University of Debrecen, Faculty of Informatics. I've completed all my classes and only the final exam remains. With a passion for technology and problem-solving, I’ve worked hard to build a solid foundation in programming and software development.
+                I hold certifications in Python (IT Specialist), HTML and CSS (IT Specialist) and Unity (Certified User: Programmer), and I have strong skills in C# and other programming languages.
+                I thrive in both team settings and independent work, and I’m always eager to learn and take on new challenges.
+                While I’m still early in my professional journey, I’m confident that my dedication and quick learning ability will allow me to make an impact in the tech industry.
+                In my free time, I enjoy staying active, watching English-language films and series, and diving into video games. Feel free to explore my projects on <a href="https://github.com/veromihaly" target="_blank">GitHub</a> to see more of what I’m working on!
             </p>
-            <p>Technologies Used: Unity, C#, Visual Studio Code, Blender.</p>
-            <p>Challenges&Solutions:</p>
-            <p>
+            <h2>Personal Information</h2>
+            <p>Name: Verő Mihály</p>
+            <p>Age: 23</p>
+            <p>Location: Hungary</p>
+            <button class="download-resume">
+                <a href="CV.pdf" download="Mihaly_Vero_Resume.pdf" target="_blank">Download My Resume</a>
+            </button>
+        </div>
+
+        <div class="tab-content" id="content2">
+            <h2>Projects</h2>
+            <h3>1. 3D Survival game made in Unity</h3>
+                <p>Description:</p>
+                <p>
+                    A 3D survival RPG game I developed for my thesis project. The game allows players to either follow the main story or explore an open world where they can gather resources,
+                    hunt animals, and survive. The project served as an opportunity to explore various aspects of Unity development, including script integration, animations, sound design,
+                    and scene management.
+                </p>
+                <p>Technologies Used: Unity, C#, Visual Studio Code, Blender.</p>
+                <p>Challenges&Solutions:</p>
                 <p>
                     -Integrating all of the game's elements, such as AI, animations, and sounds, while keeping the code organized.
                     I leveraged Unity's prefab system to streamline the process.
@@ -78,31 +77,30 @@
                 <p>
                     <a href="https://github.com/veromihaly/Wilderness_Odyssey" target="_blank">GitHub</a>
                 </p>
-            </p>
-        <h3>2. Portfolio website</h3>
-            <p>Description:</p>
-            <p>
-                This personal website showcases my skills, experience, and portfolio.
-                It was an opportunity for me to apply web development skills, focusing on building an intuitive user interface and responsive design that works well across various devices.
-            </p>
-            <p>Technologies used: HTML, CSS</p>
-            <p>Challenges&Solutions:</p>
-            <p>
-            Ensuring the site was mobile-friendly was a key challenge.
-            I implemented a responsive layout,using CSS Flexbox to ensure the website adapts well to different screen sizes, providing an optimal user experience on both desktop and mobile devices.
-            </p>
-            <p>
-                <a href="https://github.com/veromihaly/mywebsite" target="_blank">GitHub</a>
-            </p>
-    </div>
+            <h3>2. Portfolio website</h3>
+                <p>Description:</p>
+                <p>
+                    This personal website showcases my skills, experience, and portfolio.
+                    It was an opportunity for me to apply web development skills, focusing on building an intuitive user interface and responsive design that works well across various devices.
+                </p>
+                <p>Technologies used: HTML, CSS</p>
+                <p>Challenges&Solutions:</p>
+                <p>
+                Ensuring the site was mobile-friendly was a key challenge.
+                I implemented a responsive layout,using CSS Flexbox to ensure the website adapts well to different screen sizes, providing an optimal user experience on both desktop and mobile devices.
+                </p>
+                <p>
+                    <a href="https://github.com/veromihaly/mywebsite" target="_blank">GitHub</a>
+                </p>
+        </div>
 
-    <div class="tab-content" id="content3">
-        <h2>Contact Me</h2>
-        <p>Contact number: +36705961395 </p>
-        <p>Email:<a href="mailto:veromihaly18@gmail.com" target="_blank">veromihaly18@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mihály-verő-930054320" target="_blank"><img src="LI-In-Bug.png" alt="LinkedIn" style="width: 30px; height: auto;"></a></p>
+        <div class="tab-content" id="content3">
+            <h2>Contact Me</h2>
+            <p>Contact number: +36705961395 </p>
+            <p>Email:<a href="mailto:veromihaly18@gmail.com" target="_blank">veromihaly18@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mihály-verő-930054320" target="_blank"><img src="LI-In-Bug.png" alt="LinkedIn" style="width: 30px; height: auto;"></a></p>
+        </div>
     </div>
-
     <script>
         const radios = document.querySelectorAll('input[type="radio"]');
         const contents = document.querySelectorAll('.tab-content');
@@ -123,10 +121,10 @@
 
             labels.forEach(label => {
                 label.style.backgroundColor = '#1A1A1A'; 
-                label.style.color = '#DC143C'; 
+                label.style.color = '#F03C46'; 
             });
 
-            document.querySelector(`label[for="${selectedTabId}"]`).style.backgroundColor = '#DC143C';
+            document.querySelector(`label[for="${selectedTabId}"]`).style.backgroundColor = '#F03C46';
             document.querySelector(`label[for="${selectedTabId}"]`).style.color = '#FFF';
         }
 
